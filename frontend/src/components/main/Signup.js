@@ -15,7 +15,7 @@ const SignupSchema = Yup.object().shape({
     .required("Required"),
   email: Yup.string().email("Invalid email").required("Required"),
 });
-
+//signup function
 const Signup = () => {
   const signupForm = useFormik({
     initialValues: {
